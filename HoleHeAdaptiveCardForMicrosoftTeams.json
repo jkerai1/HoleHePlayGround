@@ -1,0 +1,39 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "actions": [
+    {
+      "title": "OK",
+      "type": "Action.Submit"
+    }
+  ],
+  "body": [
+    {
+      "id": "Description",
+      "isVisible": false,
+      "size": "Medium",
+      "text": "Email Recon using Holehe, the target will NOT be alerted:",
+      "type": "TextBlock",
+      "weight": "Bolder"
+    },
+    {
+      "errorMessage": "Email has not been entered correctly",
+      "id": "name",
+      "isRequired": true,
+      "label": "Email Address:",
+      "placeholder": "Email Address",
+      "style": "Email",
+      "type": "Input.Text"
+    }
+  ],
+  "refresh": {
+    "action": {
+      "type": "Action.Execute"
+    }
+  },
+  "selectAction": {
+    "associatedInputs": "auto",
+    "type": "Action.Submit"
+  },
+  "type": "AdaptiveCard",
+  "version": "1.4"
+}
