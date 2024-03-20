@@ -17,7 +17,7 @@ async def blocking_function(email_address):
     print('entering blocking function')
     output = subprocess.check_output(['holehe','--only-used',str(email_address)])
     output = output.decode('utf8').replace("'", '"')
-    output = output[153:-234].replace("32m[+","HIT FOUND").replace("[32","").replace("[0m","") 
+    output = output[151:-234].replace("32m[+","HIT FOUND").replace("[32","").replace("[0m","") 
     return output
 
 @client.command(aliases = ["holehe","osint"])
