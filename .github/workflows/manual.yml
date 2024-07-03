@@ -28,7 +28,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
     - run: echo "Checking ${{ inputs.name }}"
     - run: pip install holehe
     - run: holehe --only-used $inputs.name
